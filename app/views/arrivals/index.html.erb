@@ -1,5 +1,5 @@
 <h1>Incoming Arrivals at Great Portland Street</h1>
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Line</th>
@@ -10,11 +10,10 @@
   </thead>
   <tbody>
     <% @arrivals.each do |arrival| %>
-      <tr>
         <td><%= arrival.line_name %></td>
         <td><%= arrival.destination_name %></td>
         <td><%= arrival.expected_arrival_time %></td>
-        <td><%= arrival.platform_name %></td>
+        <td><%= arrival.platform_name%></td>
       </tr>
     <% end %>
   </tbody>

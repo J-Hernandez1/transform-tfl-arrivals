@@ -71,3 +71,4 @@ end
 
 gem 'httparty'
 gem 'rubocop', require: false
+gem 'sassc-rails', '~> 2.1'

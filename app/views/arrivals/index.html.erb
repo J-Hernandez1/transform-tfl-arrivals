@@ -1,4 +1,4 @@
-<h1>Next Arrivals at Great Portland Street</h1>
+<h1>Incoming Arrivals at Great Portland Street</h1>
 <table class="table">
   <thead>
     <tr>
@@ -12,8 +12,8 @@
     <% @arrivals.each do |arrival| %>
         <td><%= arrival.line_name %></td>
         <td><%= arrival.destination_name %></td>
-        <td><%= Time.at(arrival.expected_arrival.to_datetime.to_i).strftime("%H:%M:%S") %></td>
-        <td><%= arrival.platform_name || 'N/A' %></td>
+        <td><%= arrival.expected_arrival_time %></td>
+        <td><%= arrival.platform_name%></td>
       </tr>
     <% end %>
   </tbody>

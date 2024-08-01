@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run this this application locally:
 
-Things you may want to cover:
+- Clone the repository: git clone https://github.com/yourusername/transform_underground.git
 
-* Ruby version
+- Install dependencies:
+  cd into cloned repo
+  Run 'bundle install'
 
-* System dependencies
+- Start the server:
+  Run 'bundle exec rails s'
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- To run tests:
+  Run 'bundle exec rspec'

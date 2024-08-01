@@ -1,7 +1,5 @@
 class ArrivalsController < ApplicationController
   def index
-    arrivals = ArrivalsService.new.arrivals.parsed_response
-
-    @arrivals = arrivals.sort_by { |arrival| arrival['expectedArrival'].to_datetime }
+    @arrivals = ArrivalsService.new('940GZZLUGPS').fetch_arrivals_data
   end
 end

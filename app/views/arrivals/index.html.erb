@@ -11,10 +11,10 @@
   <tbody>
     <% @arrivals.each do |arrival| %>
       <tr>
-        <td><%= arrival['lineName'] %></td>
-        <td><%= arrival['destinationName'] %></td>
-        <td><%= Time.at(arrival['expectedArrival'].to_datetime.to_i).strftime("%H:%M:%S") %></td>
-        <td><%= arrival['platformName']%></td>
+        <td><%= arrival.line_name %></td>
+        <td><%= arrival.destination_name %></td>
+        <td><%= arrival.expected_arrival_time %></td>
+        <td><%= arrival.platform_name %></td>
       </tr>
     <% end %>
   </tbody>

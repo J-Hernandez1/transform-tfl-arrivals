@@ -1,0 +1,16 @@
+current directory: /Users/jake/transform_tfl_arrivals/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+/Users/jake/.rbenv/versions/3.0.0/bin/ruby -I /Users/jake/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20240801-98795-qzmyol.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jake/transform_tfl_arrivals/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make "DESTDIR=" clean
+
+current directory: /Users/jake/transform_tfl_arrivals/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/jake/transform_tfl_arrivals/vendor/bundle/ruby/3.0.0/gems/debug-1.9.2/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20240801-98795-7d0dxk/debug

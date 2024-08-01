@@ -10,7 +10,7 @@ class ArrivalsService
 
   def arrivals
     response = HTTParty.get("#{BASE_URL}/StopPoint/#{@station_id}/Arrivals")
-    response.parsed_response   
+    response.parsed_response
   end
 
   def fetch_arrivals_data

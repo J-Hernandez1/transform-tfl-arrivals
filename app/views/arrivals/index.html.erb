@@ -1,0 +1,19 @@
+<h1>Next Arrivals at Great Portland Street</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>Destination</th>
+      <th>Expected Arrival</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @arrivals.each do |arrival| %>
+      <tr>
+        <td><%= arrival['lineName'] %></td>
+        <td><%= arrival['destinationName'] %></td>
+        <td><%= Time.at(arrival['expectedArrival'].to_datetime.to_i).strftime("%H:%M:%S") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
